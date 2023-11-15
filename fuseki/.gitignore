@@ -1,0 +1,9 @@
+
+_data/
+_data/backups/
+_data/configuration/
+_data/databases/
+_data/logs/
+_data/system/
+_data/system_files/
+_data/templates/
