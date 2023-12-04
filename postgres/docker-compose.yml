@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+    #  - ./db_init.sh:/docker-entrypoint-initdb.d/db_init.sh 
+      - ./init-multi-db.sh:/docker-entrypoint-initdb.d/init-multi-db.sh 
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: example
+      #POSTGRES_DB: db_emma
+      POSTGRES_MULTIPLE_DATABASES: db_emma,db_emma_test
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 7051:8080

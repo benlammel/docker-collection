@@ -1,0 +1,7 @@
+<http://emma.lammel.ch/abc#3b73915a-7d66-459e-bd33-331b1b6bc03e>
+        <http://emma.lammel.ch/emma#hasEmmaId>
+                "3b73915a-7d66-459e-bd33-331b1b6bc03e";
+        <http://emma.lammel.ch/emma#label>
+                "hello world";
+        <http://emma.lammel.ch/emma#type>
+                <http://emma.lammel.ch/emma#Class> .
